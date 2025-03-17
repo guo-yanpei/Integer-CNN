@@ -82,7 +82,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_epochs', help='number of training epochs', type=int, default=50)
     parser.add_argument('--batch_size', help='batch size', type=int, default=256)
     parser.add_argument('--train_val_split', help='Train validation split ratio', type=float, default=0.99)
-    parser.add_argument('--data_dir', help='directory of folder containing the MNIST dataset', default='../data')
+    parser.add_argument('--data_dir', help='directory of folder containing the MNIST dataset', default='./data')
     parser.add_argument('--save_dir', help='save directory', default='./saved_models', type=Path)
 
 

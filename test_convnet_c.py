@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    mnist_testset = datasets.CIFAR10(root='../data', train=False, download=True, transform=transforms.Compose([
+    mnist_testset = datasets.CIFAR10(root='./data', train=False, download=True, transform=transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261))
         ]))

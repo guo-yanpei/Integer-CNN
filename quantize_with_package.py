@@ -124,7 +124,7 @@ if __name__ == '__main__':
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--filename', help='filename', type=str, default='convnet_cifar_vgg16.th')
     parser.add_argument('--num_bins', help='number of bins', type=int, default=128)
-    parser.add_argument('--data_dir', help='directory of folder containing the MNIST dataset', default='../data')
+    parser.add_argument('--data_dir', help='directory of folder containing the MNIST dataset', default='./data')
     parser.add_argument('--save_dir', help='save directory', default='./saved_models/')
 
     args = parser.parse_args()

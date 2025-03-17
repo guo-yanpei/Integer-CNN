@@ -67,6 +67,10 @@ void run_convnet(const int *x, unsigned int *class_indices)
         in=out;
         if(i==LAYER_NUM-1)
         {
+            for (int j = 0; j < OUTPUT_DIM; j ++) {
+                cout << out[j] << " ";
+            }
+            cout << endl;
             argmax_over_cols(out, class_indices, BATCH_SIZE, OUTPUT_DIM);
         }
         
