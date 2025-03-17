@@ -1,0 +1,2 @@
+python3 train_convnet.py
+python3 quantize_with_package.py
